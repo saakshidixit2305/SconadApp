@@ -56,6 +56,7 @@ class AppBodyState extends State<AppBody> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Colors.lightBlue[50],
+        iconSize: 25.0,
         currentIndex: page, // this will be set when a  tab is tapped
         onTap: navTapped,
         items: [
