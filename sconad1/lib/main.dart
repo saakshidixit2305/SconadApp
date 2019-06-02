@@ -3,6 +3,10 @@ import 'package:flutter/material.dart';
 import 'screens/about.dart';
 import 'screens/home.dart';
 import 'screens/portfolio.dart';
+import 'package:untitled2/screens/screens/pharma_.dart';
+import 'package:untitled2/screens/screens/nonpharma_.dart';
+import 'package:untitled2/screens/screens/exhibition_.dart';
+
 
 void main() {
   runApp(MaterialApp(home: AppBody()));
@@ -66,11 +70,12 @@ class AppBodyState extends State<AppBody> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.mail),
-            title: Text('Contact'),
+            title: Text('About'),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
-            title: Text('About'),
+            title: Text('Portfolio'
+                ),
           ),
         ],
       ),

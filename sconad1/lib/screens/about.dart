@@ -21,3 +21,26 @@ class PageAbout extends StatelessWidget{
 }
 
 
+
+
+
+
+
+
+
+
+
+class MyBullet extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return new Container(
+      height: 20.0,
+      width: 20.0,
+      decoration:
+      new BoxDecoration(color: Colors.black, shape: BoxShape.circle),
+    );
+  }
+}
+
+
