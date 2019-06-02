@@ -7,14 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="363c8016-5695-4476-aa14-bfbca473b998" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/sconad1/assets/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sconad1/lib/screens/exhibition.dart" beforeDir="false" afterPath="$PROJECT_DIR$/sconad1/lib/screens/exhibition.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sconad1/lib/screens/nonpharma.dart" beforeDir="false" afterPath="$PROJECT_DIR$/sconad1/lib/screens/nonpharma.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sconad1/lib/screens/pharma.dart" beforeDir="false" afterPath="$PROJECT_DIR$/sconad1/lib/screens/pharma.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sconad1/lib/screens/portfolio.dart" beforeDir="false" afterPath="$PROJECT_DIR$/sconad1/lib/screens/portfolio.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sconad1/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/sconad1/pubspec.yaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,20 +50,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sconad1/lib/screens/pharma.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+            <state relative-caret-position="270">
+              <caret line="111" column="40" selection-start-line="111" selection-start-column="40" selection-end-line="111" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sconad1/lib/screens/portfolio.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+            <state relative-caret-position="555">
+              <caret line="37" column="22" lean-forward="true" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -118,8 +111,8 @@
         <option value="$PROJECT_DIR$/sconad1/pubspec.yaml" />
         <option value="$PROJECT_DIR$/sconad1/lib/screens/exhibition.dart" />
         <option value="$PROJECT_DIR$/sconad1/lib/screens/nonpharma.dart" />
-        <option value="$PROJECT_DIR$/sconad1/lib/screens/pharma.dart" />
         <option value="$PROJECT_DIR$/sconad1/lib/screens/portfolio.dart" />
+        <option value="$PROJECT_DIR$/sconad1/lib/screens/pharma.dart" />
       </list>
     </option>
   </component>
@@ -156,13 +149,6 @@
               <item name="SconadApp" type="462c0819:PsiDirectoryNode" />
               <item name="sconad1" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SconadApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SconadApp" type="462c0819:PsiDirectoryNode" />
-              <item name="sconad1" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="screens" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -283,7 +269,7 @@
       <window_info id="Resources Explorer" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.20032573" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.048859935" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -382,13 +368,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sconad1/lib/screens/pharma.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sconad1/lib/screens/nonpharma.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -408,11 +387,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sconad1/lib/screens/portfolio.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+        <state relative-caret-position="555">
+          <caret line="37" column="22" lean-forward="true" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sconad1/lib/screens/pharma.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="111" column="40" selection-start-line="111" selection-start-column="40" selection-end-line="111" selection-end-column="40" />
         </state>
       </provider>
     </entry>
