@@ -11,7 +11,8 @@ class PageAbout extends StatelessWidget{
     return new Scaffold(
         appBar: new AppBar(
           title: new Text(title),
-
+            backgroundColor: Colors.lightBlue[100],
+          centerTitle: true,
         ),
         body: new Container(
             child: SingleChildScrollView(

@@ -24,7 +24,8 @@ class _PagePortfolioState extends State<PagePortfolio> {
     return new Scaffold(
       appBar: new AppBar(
         title: new Text(widget.title),
-        backgroundColor: Colors.lightBlue[100].withOpacity(0.25),
+        backgroundColor: Colors.lightBlue[100],
+        centerTitle: true,
       ),
       body: new Container(
         child: SingleChildScrollView(

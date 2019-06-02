@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:untitled2/screens/about.dart';
 import 'package:untitled2/screens/portfolio.dart';
 
 class PageHome extends StatefulWidget {
@@ -22,8 +21,9 @@ class _PageHomeState extends State<PageHome> {
 
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text(widget.title),
-        backgroundColor: Colors.lightBlue[100].withOpacity(0.25),
+        centerTitle: true,
+        title: new Text(widget.title, style: TextStyle(fontFamily: 'Verlag'),),
+        backgroundColor: Colors.lightBlue[100]
       ),
       body: new Container(
         child: SingleChildScrollView(
@@ -66,7 +66,9 @@ class _PageHomeState extends State<PageHome> {
                                           style: TextStyle(
                                               color: Colors.black87,
                                               fontSize: uniWidth / 12,
-                                              fontWeight: FontWeight.w700),
+                                              fontWeight: FontWeight.w400,
+                                              fontFamily: 'Verlag'
+                                          ),
                                         ),
                                       ),
                                       Padding(
@@ -77,7 +79,9 @@ class _PageHomeState extends State<PageHome> {
                                           style: TextStyle(
                                               color: Colors.black87,
                                               fontSize: uniWidth / 12,
-                                              fontWeight: FontWeight.w700),
+                                              fontWeight: FontWeight.w400,
+                                              fontFamily: 'Verlag'
+                                          ),
                                         ),
                                       ),
                                       Padding(
@@ -88,7 +92,10 @@ class _PageHomeState extends State<PageHome> {
                                           style: TextStyle(
                                               color: Colors.blue,
                                               fontSize: uniWidth / 12,
-                                              fontWeight: FontWeight.w700),
+                                              fontWeight: FontWeight.w400,
+                                              fontFamily: 'Verlag'
+                                          ),
+
                                         ),
                                       ),
                                     ],
@@ -105,31 +112,11 @@ class _PageHomeState extends State<PageHome> {
                                   style: TextStyle(
                                       color: Colors.grey,
                                       fontSize: uniWidth / 20,
-                                      fontWeight: FontWeight.w700),
+                                      fontWeight: FontWeight.w400,
+                                      fontFamily: 'Verlag'
+                                  ),
                                 ),
                               ),
-                              //      Padding(
-                              //      padding: EdgeInsets.only(left: uniWidth / 10),
-                              //    child: RaisedButton(
-                              //      child: Text('Start Exploring'),
-                              //    elevation: 1.0,
-                              //  color: Colors.lightBlue,
-                              //shape: BeveledRectangleBorder(
-                              //    borderRadius: BorderRadius.all(
-                              //            Radius.circular(7.0)),
-                              //        ),
-                              //            onPressed: () {
-                              //                Navigator.of(context).push(
-                              //                    new MaterialPageRoute(
-                              //                        builder: (BuildContext context) =>
-                              //                              PageAbout(
-                              //                                  "About",
-                              //                                  ),
-                              //                              ),
-                              //    );
-                              //    },
-                              //      splashColor: Colors.white),
-                              //  ),
                             ],
                           ),
                           Padding(
@@ -164,7 +151,9 @@ class _PageHomeState extends State<PageHome> {
                                   style: TextStyle(
                                       color: Colors.black87,
                                       fontSize: uniWidth / 12,
-                                      fontWeight: FontWeight.w700),
+                                      fontWeight: FontWeight.w400,
+                                      fontFamily: 'Verlag'
+                                  ),
                                 ),
                               ),
                               Text(
@@ -172,7 +161,9 @@ class _PageHomeState extends State<PageHome> {
                                 style: TextStyle(
                                     color: Colors.black87,
                                     fontSize: uniWidth / 12,
-                                    fontWeight: FontWeight.w700),
+                                    fontWeight: FontWeight.w400,
+                                    fontFamily: 'Verlag'
+                                ),
                               ),
                               Padding(
                                 padding: EdgeInsets.only(top: uniHeight / 40),
@@ -181,7 +172,9 @@ class _PageHomeState extends State<PageHome> {
                                   style: TextStyle(
                                       color: Colors.grey,
                                       fontSize: uniWidth / 20,
-                                      fontWeight: FontWeight.w700),
+                                      fontWeight: FontWeight.w400,
+                                      fontFamily: 'Verlag'
+                                  ),
                                 ),
                               ),
                               Padding(
@@ -192,29 +185,11 @@ class _PageHomeState extends State<PageHome> {
                                   style: TextStyle(
                                       color: Colors.grey,
                                       fontSize: uniWidth / 20,
-                                      fontWeight: FontWeight.w700),
+                                      fontWeight: FontWeight.w400,
+                                      fontFamily: 'Verlag'
+                                  ),
                                 ),
                               ),
-                              RaisedButton(
-                                  child: Text('Start Exploring',
-                                  style:TextStyle(color: Colors.white)),
-                                  elevation: 1.0,
-                                  color: Colors.lightBlue,
-                                  shape: RoundedRectangleBorder(
-                                    borderRadius:
-                                        BorderRadius.all(Radius.circular(7.0)),
-                                  ),
-                                  onPressed: () {
-                                    Navigator.of(context).push(
-                                      new MaterialPageRoute(
-                                        builder: (BuildContext context) =>
-                                            PagePortfolio(
-                                              "Portfolio",
-                                            ),
-                                      ),
-                                    );
-                                  },
-                                  splashColor: Colors.white),
                             ],
                           ),
                         ],
@@ -250,7 +225,9 @@ class _PageHomeState extends State<PageHome> {
                                       style: TextStyle(
                                           color: Colors.black87,
                                           fontSize: uniWidth / 10,
-                                          fontWeight: FontWeight.w700),
+                                          fontWeight: FontWeight.w400,
+                                          fontFamily: 'Verlag'
+                                      ),
                                     ),
                                   ),
                                 ],
@@ -259,46 +236,54 @@ class _PageHomeState extends State<PageHome> {
                           ),
                         ],
                       ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: <Widget>[
-                          Padding(
-                            padding: EdgeInsets.only(left: uniWidth / 10),
-                            child: Column(
-                              children: <Widget>[
-                                Padding(
-                                  padding: EdgeInsets.only(bottom: 0, top: 0),
-                                  child: Container(
-                                    height: 300.0,
-                                    width: 300.0,
-                                    child: Image.asset(
-                                      "assets/ss33.jpg",
+
+
+                           Padding(
+                             padding: EdgeInsets.only(left: uniWidth/15),
+                             child: Column(
+                               crossAxisAlignment: CrossAxisAlignment.center,
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: <Widget>[
+                                   Material(
+                                     elevation: 2.0,
+                                     child: Container(
+                                        height: uniHeight/2.3,
+                                        width: uniWidth/1.2,
+                                        child: Image.asset(
+                                          "assets/ss33.jpg", fit: BoxFit.contain,
+                                        ),
+                                      ),
+                                   ),
+                                  Padding(padding: EdgeInsets.only(top: uniHeight/20)),
+                                  Material(
+                                    elevation: 2.0,
+                                    child: Container(
+                                      height: uniHeight/2.3,
+                                      width: uniWidth/1.2,
+                                      child: Image.asset(
+                                        "assets/ss22.jpg",
+                                      ),
                                     ),
                                   ),
-                                ),
-                                Container(
-                                  height: 300.0,
-                                  width: 300.0,
-                                  child: Image.asset(
-                                    "assets/ss22.jpg",
+
+                                  Padding(padding: EdgeInsets.only(top: uniHeight/20)),
+                                  Material(
+                                    elevation: 2.0,
+                                    child: Container(
+                                        height: uniHeight/2.3,
+                                        width: uniWidth/1.2,
+                                        child: Image.asset(
+                                          "assets/ss11.jpg",
+                                        ),
+                                      ),
                                   ),
-                                ),
-                                Padding(
-                                  padding:
-                                      EdgeInsets.only(bottom: uniHeight / 5),
-                                  child: Container(
-                                    height: 300.0,
-                                    width: 300.0,
-                                    child: Image.asset(
-                                      "assets/ss11.jpg",
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
-                      ), /*Column(
+
+                                  Padding(padding: EdgeInsets.only(top: uniHeight/20)),
+                                ],
+                              ),
+                           ),
+
+                        /*Column(
                         children: <Widget>[
                           Stack(
                             children: <Widget>[
@@ -329,7 +314,7 @@ class _PageHomeState extends State<PageHome> {
                                       style: TextStyle(
                                           color: Colors.black87,
                                           fontSize: uniWidth / 10,
-                                          fontWeight: FontWeight.w700),
+                                          fontWeight: FontWeight.w400),
                                     ),
                                   ),
                                   Padding(
@@ -341,7 +326,7 @@ class _PageHomeState extends State<PageHome> {
                                       style: TextStyle(
                                           color: Colors.grey,
                                           fontSize: uniWidth / 20,
-                                          fontWeight: FontWeight.w700),
+                                          fontWeight: FontWeight.w400),
                                     ),
                                   ),
                                   Padding(
@@ -353,7 +338,7 @@ class _PageHomeState extends State<PageHome> {
                                       style: TextStyle(
                                           color: Colors.grey,
                                           fontSize: uniWidth / 20,
-                                          fontWeight: FontWeight.w700),
+                                          fontWeight: FontWeight.w400),
                                     ),
                                   ),
                                 ],
@@ -439,14 +424,14 @@ class _PageHomeState extends State<PageHome> {
                                     style: TextStyle(
                                         color: Colors.black87,
                                         fontSize: uniWidth / 20,
-                                        fontWeight: FontWeight.w700),
+                                        fontWeight: FontWeight.w400),
                                   ),
                                   Text(
                                     'aaaaaaaaa',
                                     style: TextStyle(
                                         color: Colors.black87,
                                         fontSize: uniWidth / 20,
-                                        fontWeight: FontWeight.w700),
+                                        fontWeight: FontWeight.w400),
                                   ),
                                 ],
                               )

@@ -1,16 +1,14 @@
 import 'package:flutter/material.dart';
-
 import 'screens/about.dart';
 import 'screens/home.dart';
 import 'screens/portfolio.dart';
-import 'package:untitled2/screens/screens/pharma_.dart';
-import 'package:untitled2/screens/screens/nonpharma_.dart';
-import 'package:untitled2/screens/screens/exhibition_.dart';
-
 
 void main() {
   runApp(MaterialApp(home: AppBody()));
 }
+
+
+
 
 PageController pagecontroller;
 
@@ -20,7 +18,6 @@ class AppBody extends StatefulWidget {
 }
 
 class AppBodyState extends State<AppBody> {
-  @override
   int page = 0;
 
   @override
@@ -61,21 +58,30 @@ class AppBodyState extends State<AppBody> {
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Colors.lightBlue[50],
         iconSize: 25.0,
-        currentIndex: page, // this will be set when a  tab is tapped
+        currentIndex: page,
+        // this will be set when a  tab is tapped
         onTap: navTapped,
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
-            title: Text('Home'),
+            title: Text(
+              'Home',
+              style: TextStyle(fontFamily: 'Verlag'),
+            ),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.mail),
-            title: Text('About'),
+            title: Text(
+              'About',
+              style: TextStyle(fontFamily: 'Verlag'),
+            ),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
-            title: Text('Portfolio'
-                ),
+            title: Text(
+              'Portfolio',
+              style: TextStyle(fontFamily: 'Verlag'),
+            ),
           ),
         ],
       ),
