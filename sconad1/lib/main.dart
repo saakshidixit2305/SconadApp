@@ -1,89 +1,40 @@
 import 'package:flutter/material.dart';
-import 'screens/about.dart';
-import 'screens/home.dart';
-import 'screens/portfolio.dart';
+import 'dart:async';
+
+import 'app.dart';
 
 void main() {
-  runApp(MaterialApp(home: AppBody()));
+  runApp(MaterialApp(
+    home: SplashScreen(),
+    debugShowCheckedModeBanner: false,
+    title: 'Sconad',
+    routes: <String, WidgetBuilder> {
+      '/Home': (BuildContext context) => AppBody()
+    },
+  ));
 }
 
-
-
-
-PageController pagecontroller;
-
-class AppBody extends StatefulWidget {
+class SplashScreen extends StatefulWidget {
   @override
-  AppBodyState createState() => AppBodyState();
+  _SplashScreenState createState() => _SplashScreenState();
 }
 
-class AppBodyState extends State<AppBody> {
-  int page = 0;
-
+class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    pagecontroller = PageController();
-  }
-
-  @override
-  void dispose() {
-    pagecontroller.dispose();
-    super.dispose();
-  }
-
-  void onPageChange(int page) {
-    setState(() {
-      this.page = page;
+    Timer(Duration(milliseconds: 7000), () {
+      Navigator.of(context).pushNamedAndRemoveUntil('/Home', (Route route)=>false);
     });
-  }
-
-  void navTapped(int page) {
-    pagecontroller.animateToPage(page,
-        duration: const Duration(milliseconds: 300), curve: Curves.ease);
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: PageView(
-        controller: pagecontroller,
-        onPageChanged: onPageChange,
-        children: [
-          PageHome("HomePage"),
-          PageAbout("About Sconad"),
-          PagePortfolio("Porfolio")
-        ],
-      ),
-      bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Colors.lightBlue[50],
-        iconSize: 25.0,
-        currentIndex: page,
-        // this will be set when a  tab is tapped
-        onTap: navTapped,
-        items: [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            title: Text(
-              'Home',
-              style: TextStyle(fontFamily: 'Verlag'),
-            ),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.mail),
-            title: Text(
-              'About',
-              style: TextStyle(fontFamily: 'Verlag'),
-            ),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            title: Text(
-              'Portfolio',
-              style: TextStyle(fontFamily: 'Verlag'),
-            ),
-          ),
-        ],
+      body: Container(
+        decoration: BoxDecoration(
+            color: Color(0xFF82C6FC),
+            image: DecorationImage(image: AssetImage('assets/loader.gif'), fit: BoxFit. contain)),
       ),
     );
   }
