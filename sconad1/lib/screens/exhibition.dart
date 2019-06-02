@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Exhibition extends StatelessWidget {
-  final String title;
 
-  Exhibition(this.title);
 
   double uniW3;
   double uniH3;
@@ -13,14 +11,6 @@ class Exhibition extends StatelessWidget {
     uniH3 = MediaQuery.of(context).size.height;
     uniW3 = MediaQuery.of(context).size.width;
     return new Scaffold(
-      appBar: new AppBar(
-        title: new Text(
-          "Exhibition",
-          textAlign: TextAlign.center,
-        ),
-        backgroundColor: Colors.lightBlue[100].withOpacity(0.25),
-
-      ),
       body: Container(
         child: SingleChildScrollView(
           child: Row(

@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Pharma extends StatelessWidget {
-  final String title;
 
-  Pharma(this.title);
 
   double uniW1;
   double uniH1;
@@ -13,13 +11,6 @@ class Pharma extends StatelessWidget {
     uniH1 = MediaQuery.of(context).size.height;
     uniW1 = MediaQuery.of(context).size.width;
     return new Scaffold(
-      appBar: new AppBar(
-        title: new Text(
-          "Pharma",
-          textAlign: TextAlign.center,
-        ),
-        backgroundColor: Colors.lightBlue[100].withOpacity(0.25),
-      ),
       body: Container(
         child: SingleChildScrollView(
           child: Row(
