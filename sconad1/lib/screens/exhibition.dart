@@ -35,16 +35,7 @@ class Exhibition extends StatelessWidget {
                       ),
                   Column(
                     children:<Widget>[
-                  Padding(
-                    padding: EdgeInsets.only(left: uniW3 / 15, top: uniH3 / 18),
-                    child: Text(
-                      'EXHIBITION',
-                      style: TextStyle(
-                          color: Colors.black,
-                          fontSize: uniW3 / 10,
-                          fontWeight: FontWeight.w700),
-                    ),
-                  ),
+
                   Padding(
                     padding: EdgeInsets.only(left: uniW3 / 15, top: uniH3 / 35),
                     child: Text(
@@ -52,32 +43,22 @@ class Exhibition extends StatelessWidget {
                       style: TextStyle(
                           color: Colors.blueGrey,
                           fontSize: uniW3 / 18,
-                          fontWeight: FontWeight.w600),
+                          fontWeight: FontWeight.w600,
+                          fontFamily: 'Verlag'),
                     ),
 
                   ),
                   Padding(
-                    padding: EdgeInsets.only(left: 0.0, top: uniH3 / 30),
-                    child: Column(
+                    padding: EdgeInsets.only(left: 10.0, top: uniH3 / 30),
+                    child: Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
-                        Padding(
-                          padding: EdgeInsets.only(bottom: uniH3/70),
-                          child: Text(
-                            "(1)  Concept, ideation and design",
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontSize: uniW3 / 17,
-                                fontWeight: FontWeight.w600),
-                          ),
-                        ),
-                        Text(
-                          "(2)  Fabrication",
-                          style: TextStyle(
-                              color: Colors.black,
-                              fontSize: uniW3 / 17,
-                              fontWeight: FontWeight.w600),
-                        ),
+                        _buildCard2("Concept"),
+                        _buildCard2("Ideation"),
+                        _buildCard2("Designing"),
+
+                        _buildCard2("Fabrication"),
+
 
                       ],
                     ),
@@ -89,148 +70,117 @@ class Exhibition extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: <Widget>[
                         Padding(
-                          padding: EdgeInsets.only(top: uniH3/15,bottom: uniH3/35),
+                          padding: EdgeInsets.only(left:5.0, top: uniH3/15,bottom: uniH3/35),
                           child: Text(
-                            "Activities",
+                            "Our Clients",
                             style: TextStyle(
-                                color: Colors.black,
+                                color: Colors.blueGrey,
                                 fontSize: uniW3 / 12,
-                                fontWeight: FontWeight.w600),
+                                fontWeight: FontWeight.w600,
+                                fontFamily: 'Verlag'),
                           ),
+                        ),
+                        Padding(
+                          padding: EdgeInsets.only(
+                              left: uniW3/15,
+                              top: uniH3 / 22, bottom: uniH3 / 100),
+                          child: _buildCard("SVK Jewels Pvt. Ltd.", "assets/exhibition1.jpg"),
                         ),
 
                         Padding(
-                          padding: EdgeInsets.only(left: uniW3/12),
-                          child: Container(
-                              height: 300.0,
-                              width: 300.0,
-                              child: Image.asset(
-                                "assets/exhibition1.jpg",
-                              )),
+                          padding: EdgeInsets.only(
+                              left: uniW3/15,
+                              top: uniH3 / 22, bottom: uniH3 / 100),
+                          child: _buildCard("Solvay Pharma India Ltd", "assets/exhibition2.jpg"),
                         ),
                         Padding(
-                          padding: EdgeInsets.only(top: uniH3/50,bottom: uniH3/12),
-                          child: Text(
-                            "  Client: SVK Jewels Pvt. Ltd.",
-                            style: TextStyle(
-                                color: Colors.lightBlue,
-                                fontSize: uniW3 / 20,
-                                fontWeight: FontWeight.w600),
-                          ),
-                        ),
-
-                        Padding(
-                          padding: EdgeInsets.only(left: uniW3/15),
-                          child: Container(
-                              height: 220.0,
-                              width: 300.0,
-                              child: Image.asset(
-                                "assets/exhibition2.jpg",
-                              )),
+                          padding: EdgeInsets.only(
+                              left: uniW3/15,
+                              top: uniH3 / 22, bottom: uniH3 / 100),
+                          child: _buildCard("Lupin Ltd", "assets/exhibition3.jpg"),
                         ),
                         Padding(
-                          padding: EdgeInsets.only(top: uniH3/80,bottom: uniH3/12),
-                          child: Text(
-                            "  Client: Solvay Pharma India Ltd",
-                            style: TextStyle(
-                                color: Colors.lightBlue,
-                                fontSize: uniW3 / 20,
-                                fontWeight: FontWeight.w600),
-                          ),
+                          padding: EdgeInsets.only(
+                              left: uniW3/15,
+                              top: uniH3 / 22, bottom: uniH3 / 100),
+                          child: _buildCard("Lupin Ltd", "assets/exhibition4.jpg"),
                         ),
 
-                        Padding(
-                          padding: EdgeInsets.only(left: uniW3/12),
-                          child: Container(
-                              height: 300.0,
-                              width: 300.0,
-                              child: Image.asset(
-                                "assets/exhibition3.jpg",
-                              )),
-                        ),
-                        Padding(
-                          padding: EdgeInsets.only(top: uniH3/50,bottom: uniH3/12),
-                          child: Text(
-                            "  Client: Lupin Ltd",
-                            style: TextStyle(
-                                color: Colors.lightBlue,
-                                fontSize: uniW3 / 20,
-                                fontWeight: FontWeight.w600),
-                          ),
-                        ),
 
-                        Padding(
-                          padding: EdgeInsets.only(left: uniW3/12),
-                          child: Container(
-                              height: 270.0,
-                              width: 300.0,
-                              child: Image.asset(
-                                "assets/exhibition4.jpg",
-                              )),
-                        ),
-                        Padding(
-                          padding: EdgeInsets.only(top: uniH3/50,bottom: uniH3/12),
-                          child: Text(
-                            "  Client: Lupin Ltd.",
-                            style: TextStyle(
-                                color: Colors.lightBlue,
-                                fontSize: uniW3 / 20,
-                                fontWeight: FontWeight.w600),
-                          ),
-                        ),
-                        Padding(
-                          padding: EdgeInsets.only(top: uniH3/15,bottom: uniH3/35),
-                          child: Text(
-                            "Clients",
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontSize: uniW3 / 10,
-                                fontWeight: FontWeight.w600),
-                          ),),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[
-
-                        Padding(
-                          padding: const EdgeInsets.all(4.0),
-                          child: Text(
-                            "(1)  Lupin Ltd",
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontSize: uniW3 / 21,
-                                fontWeight: FontWeight.w600),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(4.0),
-                          child: Text(
-                            "(2)  Solvay Pharma",
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontSize: uniW3 / 21,
-                                fontWeight: FontWeight.w600),
-                          ),
-                        ),
-
-                        Padding(
-                          padding: const EdgeInsets.all(4.0),
-                          child: Text(
-                            "(3)  SVK Jewels Pvt. Ltd.",
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontSize: uniW3 / 21,
-                                fontWeight: FontWeight.w600),
-                          ),
-                        ),
-
-                      ], ),
-                  ],),),
+                      ],
+                    ),
+                  ),
+      ]
+    ),
                 ],
               ),
-            ],
+
           ),
         ),
-      ),
+      );
+
+  }
+  Widget _buildCard(String name, String status)
+  {
+    return Card(
+        shape:
+        RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
+        elevation: 3.0,
+        color: Colors.lightBlue[100],
+
+        child: Column(
+            children: <Widget>[
+
+              Container(
+                  height: 300.0,
+                  width: 300.0,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.only(topLeft: Radius.circular(10.0),topRight: Radius.circular(10.0)),
+                      color: Colors.blueGrey,
+                      image: DecorationImage(
+                          image: AssetImage(status),fit: BoxFit.fill))),
+              Center(
+                child: Text(
+                  name,
+                  style:
+                  TextStyle(color: Colors.white, fontWeight: FontWeight.bold , fontSize: 15,fontFamily: 'Verlag'),
+                ),
+              ),
+            ]
+        )
+    );
+
+  }Widget _buildCard2(String name)
+  {
+    return Card(
+        elevation: 3.0,
+        color:Colors.white
+        ,
+        child: Column(
+            children:<Widget>[
+
+              Container(
+                  height: 100,
+                  width: 90,
+                  padding: EdgeInsets.all(5.0),
+                  child: Center(
+
+                    child:Text(
+                      name,
+                      style: TextStyle(
+                          color:  Colors.blueGrey,
+                          fontSize: uniW3 / 26,
+                          fontWeight: FontWeight.w600,
+                          fontFamily: 'Verlag'),
+                    ),
+
+
+
+                  )
+              )
+
+            ]
+        )
     );
   }
 }

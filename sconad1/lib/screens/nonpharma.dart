@@ -33,19 +33,10 @@ class NonPharma extends StatelessWidget {
                           ),
                         ),
                       ),
+
                       Column(
                         children: <Widget>[
-                          Padding(
-                            padding: EdgeInsets.only(
-                                left: uniW1 / 15, top: uniH1 / 10),
-                            child: Text(
-                              'NON - PHARMA',
-                              style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: uniW1 / 10,
-                                  fontWeight: FontWeight.w700),
-                            ),
-                          ),
+
                           Padding(
                             padding: EdgeInsets.only(
                                 left: uniW1 / 30, top: uniH1 / 35),
@@ -54,119 +45,30 @@ class NonPharma extends StatelessWidget {
                               style: TextStyle(
                                   color: Colors.blueGrey,
                                   fontSize: uniW1 / 19,
-                                  fontWeight: FontWeight.w600),
+                                  fontWeight: FontWeight.w600,
+                                  fontFamily: 'Verlag'),
                             ),
                           ),
+
                         ],
                       ),
                     ],
                   ),
                   Padding(
                     padding: EdgeInsets.only(
-                        left: 0.0, top: uniH1 / 300, bottom: uniH1 / 15),
-                    child: Column(
+                        left: 10.0, top: uniH1 / 300, bottom: uniH1 / 15),
+                    child: Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
+
+
+
                       children: <Widget>[
-                        Padding(
-                          padding: EdgeInsets.only(bottom: uniH1 / 50),
-                          child: Text(
-                            "(1)  Corporate brand building",
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontSize: uniW1 / 17,
-                                fontWeight: FontWeight.w600),
-                          ),
-                        ),
-                        Text(
-                          "(2)  Branding",
-                          style: TextStyle(
-                              color: Colors.black,
-                              fontSize: uniW1 / 17,
-                              fontWeight: FontWeight.w600),
-                        ),
-                        Text(
-                          "  -  Positioning",
-                          style: TextStyle(
-                              color: Colors.black,
-                              fontSize: uniW1 / 21,
-                              fontWeight: FontWeight.w600),
-                        ),
-                        Text(
-                          "  -  Packaging",
-                          style: TextStyle(
-                              color: Colors.black,
-                              fontSize: uniW1 / 21,
-                              fontWeight: FontWeight.w600),
-                        ),
-                        Text(
-                          "  -  Labels, Tags, Product pack",
-                          style: TextStyle(
-                              color: Colors.black,
-                              fontSize: uniW1 / 21,
-                              fontWeight: FontWeight.w600),
-                        ),
-                        Text(
-                          "  -  POP’s",
-                          style: TextStyle(
-                              color: Colors.black,
-                              fontSize: uniW1 / 21,
-                              fontWeight: FontWeight.w600),
-                        ),
-                        Text(
-                          "  -  Displays, Dispensers",
-                          style: TextStyle(
-                              color: Colors.black,
-                              fontSize: uniW1 / 21,
-                              fontWeight: FontWeight.w600),
-                        ),
-                        Padding(
-                          padding: EdgeInsets.only(bottom: uniH1 / 50),
-                          child: Text(
-                            "  -  Brand Plan",
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontSize: uniW1 / 21,
-                                fontWeight: FontWeight.w600),
-                          ),
-                        ),
-                        Text(
-                          "(3)  Ads",
-                          style: TextStyle(
-                              color: Colors.black,
-                              fontSize: uniW1 / 17,
-                              fontWeight: FontWeight.w600),
-                        ),
-                        Text(
-                          "  -  Special Campaign (Media Mix)",
-                          style: TextStyle(
-                              color: Colors.black,
-                              fontSize: uniW1 / 21,
-                              fontWeight: FontWeight.w600),
-                        ),
-                        Text(
-                          "  -  Magazine ads",
-                          style: TextStyle(
-                              color: Colors.black,
-                              fontSize: uniW1 / 21,
-                              fontWeight: FontWeight.w600),
-                        ),
-                        Padding(
-                          padding: EdgeInsets.only(bottom: uniH1 / 50),
-                          child: Text(
-                            "  -  Press ads",
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontSize: uniW1 / 21,
-                                fontWeight: FontWeight.w600),
-                          ),
-                        ),
-                        Text(
-                          "(4)  Radio Spots",
-                          style: TextStyle(
-                              color: Colors.black,
-                              fontSize: uniW1 / 17,
-                              fontWeight: FontWeight.w600),
-                        ),
+                        _buildCard2("Corporate Brand building"),
+                        _buildCard2("Branding"),
+                        _buildCard2("Ads"),
+
+                      _buildCard2("Radio Spot"),
+
                       ],
                     ),
                   ),
@@ -178,186 +80,92 @@ class NonPharma extends StatelessWidget {
                         Padding(
                           padding: EdgeInsets.only(left: uniW1 / 10),
                           child: Text(
-                            "Activities",
+                            "Our Clients",
                             style: TextStyle(
                                 color: Colors.black,
                                 fontSize: uniW1 / 10,
-                                fontWeight: FontWeight.w600),
+                                fontWeight: FontWeight.w600,
+                                fontFamily: 'Verlag'),
                           ),
                         ),
+
                         Column(
                           children: <Widget>[
 
                             Padding(
-                              padding: EdgeInsets.only(
-                                  left: uniW1 / 15, top: uniH1 / 25),
-                              child: Container(
-                                  height: 350.0,
-                                  width: 300.0,
-                                  child: Image.asset(
-                                    "assets/non1a.jpg",
-                                  )),
+                                padding: EdgeInsets.only(
+                                    left: uniW1/15,
+                                    top: uniH1 / 12, bottom: uniH1 / 100),
+                                child:  _buildCard("S.vinodkumar", "assets/non1a.jpg")
                             ),
                             Padding(
-                              padding: EdgeInsets.only(
-                                  left: uniW1 / 15,
-                                  top: uniH1 / 15,
-                                  bottom: uniH1 / 20),
-                              child: Container(
-                                  height: 350.0,
-                                  width: 300.0,
-                                  child: Image.asset(
-                                    "assets/non1b.jpg",
-                                  )),
-                            ),
-                            Padding(
-                              padding: EdgeInsets.only(
-                                  left: uniW1 / 15,
-                                  top: uniH1 / 150,
-                                  bottom: uniH1 / 15),
-                              child: Text(
-                                "  S.vinodkumar",
-                                style: TextStyle(
-                                    color: Colors.lightBlue,
-                                    fontSize: uniW1 / 20,
-                                    fontWeight: FontWeight.w600),
-                              ),
-                            ),
+                                padding: EdgeInsets.only(
+                                    left: uniW1/15,
+                                    top: uniH1 / 12, bottom: uniH1 / 100),
+                                child:  _buildCard("S.vinodkumar", "assets/non1b.jpg")
+                            )
+
+
                           ],
                         ),
                         Column(
                           children: <Widget>[
+                            Padding(
+                                padding: EdgeInsets.only(
+                                    left: uniW1/15,
+                                    top: uniH1 / 12, bottom: uniH1 / 100),
+                                child:  _buildCard("Saraswat Bank", "assets/non2a.jpg")
+                            ),
+                            Padding(
+                                padding: EdgeInsets.only(
+                                    left: uniW1/15,
+                                    top: uniH1 / 12, bottom: uniH1 / 100),
+                                child:  _buildCard("Saraswat Bank", "assets/non2b.jpg")
+                            ),
 
-                            Padding(
-                              padding: EdgeInsets.only(
-                                  left: uniW1 / 15, top: uniH1 / 25),
-                              child: Container(
-                                  height: 150.0,
-                                  width: 300.0,
-                                  child: Image.asset(
-                                    "assets/non2a.jpg",
-                                  )),
-                            ),
-                            Padding(
-                              padding: EdgeInsets.only(
-                                  left: uniW1 / 15, top: uniH1 / 25),
-                              child: Container(
-                                height: 200.0,
-                                width: 300.0,
-                                child: Image.asset(
-                                  "assets/non2b.jpg",
-                                ),
-                              ),
-                            ),
-                            Padding(
-                              padding: EdgeInsets.only(
-                                left: uniW1 / 15,
-                                top: uniH1 / 25,
-                                bottom: uniH1/15
-                              ),
-                              child: Text(
-                                "  Saraswat Bank",
-                                style: TextStyle(
-                                    color: Colors.lightBlue,
-                                    fontSize: uniW1 / 20,
-                                    fontWeight: FontWeight.w600),
-                              ),
-                            ),
+
+
                           ],
                         ),
                         Column(
                           children: <Widget>[
+                            Padding(
+                                padding: EdgeInsets.only(
+                                    left: uniW1/15,
+                                    top: uniH1 / 12, bottom: uniH1 / 100),
+                                child:  _buildCard("Mr.Clean", "assets/non3a.jpg")
+                            ),
+                            Padding(
+                                padding: EdgeInsets.only(
+                                    left: uniW1/15,
+                                    top: uniH1 / 12, bottom: uniH1 / 100),
+                                child:  _buildCard("Mr.Clean", "assets/non3b.jpg")
+                            ),
 
-                            Padding(
-                              padding: EdgeInsets.only(
-                                  left: uniW1 / 15, top: uniH1 / 25),
-                              child: Container(
-                                  height: 350.0,
-                                  width: 300.0,
-                                  child: Image.asset(
-                                    "assets/non3a.jpg",
-                                  )),
-                            ),
-                            Padding(
-                              padding: EdgeInsets.only(
-                                  left: uniW1 / 15, top: uniH1 / 25),
-                              child: Container(
-                                height: 200.0,
-                                width: 300.0,
-                                child: Image.asset(
-                                  "assets/non3b.jpg",
-                                ),
-                              ),
-                            ),
-                            Padding(
-                              padding: EdgeInsets.only(
-                                  left: uniW1 / 15,
-                                  top: uniH1 / 25,
-                                  bottom: uniH1 / 15),
-                              child: Text(
-                                "  Mr.Clean",
-                                style: TextStyle(
-                                    color: Colors.lightBlue,
-                                    fontSize: uniW1 / 20,
-                                    fontWeight: FontWeight.w600),
-                              ),
-                            ),
+
+
                           ],
                         ),
                         Column(
                           children: <Widget>[
+                            Padding(
+                                padding: EdgeInsets.only(
+                                    left: uniW1/15,
+                                    top: uniH1 / 12, bottom: uniH1 / 100),
+                                child:  _buildCard("Milton", "assets/non4a.jpg")
+                            ),
+                            Padding(
+                                padding: EdgeInsets.only(
+                                    left: uniW1/15,
+                                    top: uniH1 / 12, bottom: uniH1 / 100),
+                                child:  _buildCard("Milton", "assets/non4b.jpg")
+                            ),
 
-                            Padding(
-                              padding: EdgeInsets.only(
-                                  left: uniW1 / 15, top: uniH1 / 25),
-                              child: Container(
-                                  height: 80.0,
-                                  width: 300.0,
-                                  child: Image.asset(
-                                    "assets/non4a.jpg",
-                                  )),
-                            ),
-                            Padding(
-                              padding: EdgeInsets.only(
-                                left: uniW1 / 15,
-                              ),
-                              child: Container(
-                                height: 250.0,
-                                width: 300.0,
-                                child: Image.asset(
-                                  "assets/non4b.jpg",
-                                ),
-                              ),
-                            ),
-                            Padding(
-                              padding: EdgeInsets.only(
-                                left: uniW1 / 15,
-                                top: uniH1 / 35,
-                                bottom: uniH1/15
-                              ),
-                              child: Text(
-                                "  Milton",
-                                style: TextStyle(
-                                    color: Colors.lightBlue,
-                                    fontSize: uniW1 / 20,
-                                    fontWeight: FontWeight.w600),
-                              ),
-                            ),
+
+
                           ],
                         ),
-                        Padding(
-                          padding: EdgeInsets.only(
-                              top: uniH1 / 20,
-                              bottom: uniH1 / 25,
-                              left: uniW1 / 20),
-                          child: Text(
-                            "Clients",
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontSize: uniW1 / 10,
-                                fontWeight: FontWeight.w600),
-                          ),
-                        ),
+
                         Stack(
                           children: <Widget>[
                             FractionalTranslation(
@@ -375,174 +183,7 @@ class NonPharma extends StatelessWidget {
                               ),
                             ),
 
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                        children:<Widget>[
-
-                        Padding(
-                          padding: const EdgeInsets.all(4.0),
-                          child: Text(
-                            "(1)  Milton Global    ",
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontSize: uniW1 / 21,
-                                fontWeight: FontWeight.w600),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(4.0),
-                          child: Text(
-                            "     – Treo (Glassware) Milton (Thermoware)",
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontSize: uniW1 / 21,
-                                fontWeight: FontWeight.w600),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(4.0),
-                          child: Text(
-                            "(2)  Kishco ",
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontSize: uniW1 / 21,
-                                fontWeight: FontWeight.w600),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(4.0),
-                          child: Text(
-                            "     – Range of Products",
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontSize: uniW1 / 21,
-                                fontWeight: FontWeight.w600),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(4.0),
-                          child: Text(
-                            "(3)  Mr. Clean  ",
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontSize: uniW1 / 21,
-                                fontWeight: FontWeight.w600),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(4.0),
-                          child: Text(
-                            "     – Pencils, Erasers and Colour Crayons",
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontSize: uniW1 / 21,
-                                fontWeight: FontWeight.w600),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(4.0),
-                          child: Text(
-                            "(4)  Camlin ",
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontSize: uniW1 / 21,
-                                fontWeight: FontWeight.w600),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(4.0),
-                          child: Text(
-                            "     -  Shampoo and Sun Block",
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontSize: uniW1 / 21,
-                                fontWeight: FontWeight.w600),
-                          ),
-                        ),
-
-                        Padding(
-                          padding: const EdgeInsets.all(4.0),
-                          child: Text(
-                            "(5)  Syndicate ",
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontSize: uniW1 / 21,
-                                fontWeight: FontWeight.w600),
-                          ),
-
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(4.0),
-                          child: Text(
-                            "     – Wipers and Exhaust Systems",
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontSize: uniW1 / 21,
-                                fontWeight: FontWeight.w600),
-                          ),
-                        ),
-
-                        Padding(
-                          padding: const EdgeInsets.all(4.0),
-                          child: Text(
-                            "(6)  S. Vinod kumar Group",
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontSize: uniW1 / 21,
-                                fontWeight: FontWeight.w600),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(4.0),
-                          child: Text(
-                            "     – Diamond + Jewelery Division",
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontSize: uniW1 / 21,
-                                fontWeight: FontWeight.w600),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(4.0),
-                          child: Text(
-                            "(7)  Saraswat Bank ",
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontSize: uniW1 / 21,
-                                fontWeight: FontWeight.w600),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(4.0),
-                          child: Text(
-                            "     – Outdoors",
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontSize: uniW1 / 21,
-                                fontWeight: FontWeight.w600),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(4.0),
-                          child: Text(
-                            "(8)  Tata Consultancy Services ",
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontSize: uniW1 / 21,
-                                fontWeight: FontWeight.w600),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(4.0),
-                          child: Text(
-                            "      – Performance Engineering Group",
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontSize: uniW1 / 21,
-                                fontWeight: FontWeight.w600),
-                          ),
-                        ),
-                        ],),],),
+                        ],),
                       ],
                     ),
                   ),
@@ -553,5 +194,70 @@ class NonPharma extends StatelessWidget {
         ),
       ),
     );
+  }
+  Widget _buildCard2(String name)
+  {
+    return Card(
+        elevation: 3.0,
+        color:Colors.white
+        ,
+        child: Column(
+            children:<Widget>[
+
+              Container(
+                  height: 100,
+                  width: 90,
+                  padding: EdgeInsets.all(5.0),
+                  child: Center(
+
+                    child:Text(
+                      name,
+                      style: TextStyle(
+                          color:  Colors.blueGrey,
+                          fontSize: uniW1 / 26,
+                          fontWeight: FontWeight.w600,
+                          fontFamily: 'Verlag'),
+                    ),
+
+
+
+                  )
+              )
+
+            ]
+        )
+    );
+  }
+
+  Widget _buildCard(String name, String status)
+  {
+    return Card(
+        shape:
+        RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
+        elevation: 3.0,
+        color: Colors.lightBlue[100],
+
+        child: Column(
+            children: <Widget>[
+
+              Container(
+                  height: 300.0,
+                  width: 300.0,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.only(topLeft: Radius.circular(10.0),topRight: Radius.circular(10.0)),
+                      color: Colors.black,
+                      image: DecorationImage(
+                          image: AssetImage(status),fit: BoxFit.fill))),
+              Center(
+                child: Text(
+                  name,
+                  style:
+                  TextStyle(color: Colors.white, fontWeight: FontWeight.bold , fontSize: 15,fontFamily: 'Verlag'),
+                ),
+              ),
+            ]
+        )
+    );
+
   }
 }

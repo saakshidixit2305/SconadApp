@@ -35,19 +35,7 @@ class Pharma extends StatelessWidget {
                       ),
                       Column(
                         children: <Widget>[
-                          Padding(
-                            padding: EdgeInsets.only(
-                                left: uniW1 / 12, top: uniH1 / 10),
-                            child: Text(
-                              'PHARMA',
-                              style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: uniW1 / 15,
-                                  fontWeight: FontWeight.w600,
-                                  fontFamily: 'Verlag'
-                              ),
-                            ),
-                          ),
+
                           Padding(
                             padding: EdgeInsets.only(
                                 left: uniW1 / 15, top: uniH1 / 35),
@@ -56,63 +44,34 @@ class Pharma extends StatelessWidget {
                               style: TextStyle(
                                   color: Colors.blueGrey,
                                   fontSize: uniW1 / 18,
-                                  fontWeight: FontWeight.w600),
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(
-                                left: uniW1 / 20,
-                                top: uniH1 / 40,
-                                bottom: uniH1 / 40),
-                            child: Text(
-                              "Designing",
-                              style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: uniW1 / 17,
                                   fontWeight: FontWeight.w600,
-                                  fontFamily: 'Verlag'
-                              ),
+                                  fontFamily: 'Verlag'),
                             ),
                           ),
+
                         ],
                       ),
-                    ],
-                  ),
-                  Column(
+                    ]),
+
+                  Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-                      Text(
-                        "(1)  Ads",
-                        style: TextStyle(
-                            color: Colors.black,
-                            fontSize: uniW1 / 21,
-                            fontWeight: FontWeight.w600),
-                      ),
-                      Text(
-                        "(2)  Visual aids",
-                        style: TextStyle(
-                            color: Colors.black,
-                            fontSize: uniW1 / 21,
-                            fontWeight: FontWeight.w600),
-                      ),
-                      Text(
-                        "(3)  Special Campaigns",
-                        style: TextStyle(
-                            color: Colors.black,
-                            fontSize: uniW1 / 21,
-                            fontWeight: FontWeight.w600),
-                      ),
+                     _buildCard2("Designing Ads"),
+                     _buildCard2("Designing Visual Aids"),
+                     _buildCard2("Designing Special Campaigns"),
                     ],
                   ),
+
+
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
                       Padding(
                         padding: EdgeInsets.only(
-                          left: uniW1/20,
-                            top: uniH1 / 12, bottom: uniH1 / 25),
+                          left: uniW1/10,
+                            top: uniH1 / 12, bottom: uniH1 / 50),
                         child: Text(
-                          "Activities",
+                          "Our Clients",
                           style: TextStyle(
                               color: Colors.black,
                               fontSize: uniW1 / 17,
@@ -121,51 +80,11 @@ class Pharma extends StatelessWidget {
                           ),
                         ),
                       ),
-                      Padding(
-                        padding: EdgeInsets.only(left: uniW1 / 12),
-                        child: Container(
-                          height: uniH1/2.6,
-                          width: uniW1/1.25,
-                          child: Image.asset(
-                            "assets/pharma1.jpg",
-                          ),
-                        ),
-                      ),
-                      Padding(padding: EdgeInsets.only(top: uniH1/50)),
-                       Padding(
-                         padding: EdgeInsets.only(left: uniW1/12),
-                         child: Text(
-                            "Iancon2007-Glenmark",
-                            style: TextStyle(
-                                color: Colors.lightBlue,
-                                fontSize: uniW1 / 24,
-                                fontWeight: FontWeight.w600),
-                          ),
-                       ),
 
-                      Padding(padding: EdgeInsets.only(top: uniH1/25)),
 
-                      Padding(
-                        padding: EdgeInsets.only(left: uniW1/12),
-                        child: Container(
-                            height: uniH1/3,
-                            width: uniW1/1.25,
-                            child: Image.asset(
-                              "assets/pharma2.jpg",
-                            )),
-                      ),
-                      Padding(padding: EdgeInsets.only(top: uniH1/50)),
 
-                      Padding(
-                        padding: EdgeInsets.only(left: uniW1/12),
-                        child: Text(
-                            "ANCIPS 2004 –Solvay",
-                            style: TextStyle(
-                                color: Colors.lightBlue,
-                                fontSize: uniW1 / 24,
-                                fontWeight: FontWeight.w600),
-                          ),
-                      ),
+
+
 
                       Stack(
                         children: <Widget>[
@@ -183,135 +102,120 @@ class Pharma extends StatelessWidget {
                               ),
                             ),
                           ),
-                          Column(
-                            children: <Widget>[
-                              Padding(
-                                padding: EdgeInsets.only(top: uniH1 / 20,left: uniW1/12),
-                                child: Container(
-                                    height: uniH1/3,
-                                    width: uniW1/1.25,
-                                    child: Image.asset(
-                                      "assets/pharma3.jpg",
-                                    )),
-                              ),
-                              Padding(padding: EdgeInsets.only(top: uniH1/50)),
-                              Padding(
-                                 padding: EdgeInsets.only(left: uniW1/12),
-                                 child: Text(
-                                    "CAD 2004-Lupin",
-                                    style: TextStyle(
-                                        color: Colors.lightBlue,
-                                        fontSize: uniW1 / 24,
-                                        fontWeight: FontWeight.w600),
-                                  ),
-                               ),
-
-                            ],
-                          ),
+                          Padding(
+                            padding: EdgeInsets.only(
+                                left: uniW1/15,
+                                top: uniH1 / 12, bottom: uniH1 / 100),
+                        child:  _buildCard("ANCIPS 2004- Lupin", "assets/pharma4.jpg")
+                          )
                         ],
                       ),
-                      Padding(padding: EdgeInsets.only(top: uniH1/25)),
-                      Padding(
-                        padding:  EdgeInsets.only(left: uniW1/10),
-                        child: Container(
-                            height: uniH1/4,
-                            width: uniW1/1.25,
-                            child: Image.asset(
-                              "assets/pharma4.jpg",
-                              fit: BoxFit.contain,
-                            )),
-                      ),
-                      Padding(padding: EdgeInsets.only(top: uniH1/50)),
-                      Padding(
-                        padding: EdgeInsets.only(left: uniW1/12),
-                        child: Text(
-                            "ANCIPS 2004- Lupin",
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                                color: Colors.lightBlue,
-                                fontSize: uniW1 / 24,
-                                fontWeight: FontWeight.w600,
-                            ),
-                          ),
-                      ),
-                      Padding(
-                        padding: EdgeInsets.only(left: uniW1/20, top: uniH1/25),
-                        child: Text(
-                          "Our Clients",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
 
-                              color: Colors.black,
-                              fontSize: uniW1 / 17,
-                              fontWeight: FontWeight.w500,
-                              fontFamily: 'Verlag'
-                          ),
-                        ),
-                      ),
+
+
 
                     ],
                   ),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      Padding(
-                        padding: const EdgeInsets.all(4.0),
-                        child: Text(
-                          "(1)  Glenmark Pharmaceuticals Ltd. ",
-                          style: TextStyle(
-                              color: Colors.black,
-                              fontSize: uniW1 / 21,
-                              fontWeight: FontWeight.w600),
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.all(4.0),
-                        child: Text(
-                          "(2)  Camlin pharma",
-                          style: TextStyle(
-                              color: Colors.black,
-                              fontSize: uniW1 / 21,
-                              fontWeight: FontWeight.w600),
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.all(4.0),
-                        child: Text(
-                          "(3)  Sun Pharmaceuticals",
-                          style: TextStyle(
-                              color: Colors.black,
-                              fontSize: uniW1 / 21,
-                              fontWeight: FontWeight.w600),
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.all(4.0),
-                        child: Text(
-                          "(4)  Lupin Ltd",
-                          style: TextStyle(
-                              color: Colors.black,
-                              fontSize: uniW1 / 21,
-                              fontWeight: FontWeight.w600),
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.all(4.0),
-                        child: Text(
-                          "(5)  Solvay Pharma",
-                          style: TextStyle(
-                              color: Colors.black,
-                              fontSize: uniW1 / 21,
-                              fontWeight: FontWeight.w600),
-                        ),
-                      ),
+ new Column(
+   mainAxisAlignment: MainAxisAlignment.start,
+ crossAxisAlignment: CrossAxisAlignment.start,
+ children:<Widget>[
+
+      Padding(
+        padding: EdgeInsets.only(
+            left: uniW1/15,
+            top: uniH1 / 22, bottom: uniH1 / 100),
+                   child:  _buildCard('Iancon2007-Glenmark', 'assets/pharma1.jpg'),
+      ),
+      Padding(
+        padding: EdgeInsets.only(
+            left: uniW1/15,
+            top: uniH1 / 22, bottom: uniH1 / 100),
+                 child: _buildCard('ANCIPS 2004 –Solvay', 'assets/pharma2.jpg'),
+      ),
+      Padding(
+        padding: EdgeInsets.only(
+            left: uniW1/15,
+            top: uniH1 / 22, bottom: uniH1 / 100),
+                 child: _buildCard("CAD 2004-Lupin", "assets/pharma3.jpg"),
+      )
+    ]
+ )
+
+
                     ],
                   ),
                 ],
               ),
-            ],
+
           ),
         ),
-      ),
+      );
+
+  }
+  Widget _buildCard(String name, String status)
+  {
+    return Card(
+        shape:
+        RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
+  elevation: 3.0,
+  color: Colors.lightBlue[100],
+
+  child: Column(
+  children: <Widget>[
+
+  Container(
+      height: 300.0,
+      width: 300.0,
+      decoration: BoxDecoration(
+          borderRadius: BorderRadius.only(topLeft: Radius.circular(10.0),topRight: Radius.circular(10.0)),
+          color: Colors.black,
+          image: DecorationImage(
+              image: AssetImage(status),fit: BoxFit.fill))),
+  Center(
+    child: Text(
+      name,
+      style:
+      TextStyle(color: Colors.white, fontWeight: FontWeight.bold , fontSize: 15,fontFamily: 'Verlag'),
+    ),
+  ),
+    ]
+    )
+    );
+
+  }
+  Widget _buildCard2(String name)
+  {
+    return Card(
+      elevation: 3.0,
+        color:Colors.white
+            ,
+      child: Column(
+        children:<Widget>[
+
+      Container(
+        height: 125,
+         width: 125,
+          padding: EdgeInsets.all(5.0),
+         child: Center(
+
+           child:Text(
+            name,
+            style: TextStyle(
+                color:  Colors.blueGrey,
+                fontSize: uniW1 / 21,
+                fontWeight: FontWeight.w600,
+                fontFamily: 'Verlag'),
+          ),
+
+
+
+      )
+      )
+
+        ]
+      )
     );
   }
 }
+
